@@ -219,3 +219,28 @@ print(b) # 두 변수의 값을 간단하게 바꿀 수 있다.
 ```
 ### 결과 값
 ![image](https://user-images.githubusercontent.com/104752580/224895670-1c951fd1-7581-4689-ab99-b88ea5a244ca.png)
+# quiz
+### 조건에 맞게 작성
+![image](https://user-images.githubusercontent.com/104752580/224913119-8e4fd646-a87c-49e1-8767-9f9211998e9b.png)
+### 나의 코드 
+```python
+from random import * # random 모듈 import
+a = range(1,21) # 1~20까지 범위 설정
+b = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] # 1~20까지 리스트 작성
+print(type(a)) # a 자료형 형태 파악
+print(type(b)) # b 자료형 형태 파악
+print(list(a)) # a 자료형 리스트로 변환
+shuffle(b) # b 리스트 값 혼합하여 섞기
+print(b)
+print('---당첨자 발표---')
+c = sample(b,1) # b 자료형에서 1개 랜덤으로 뽑고 리스트로 변환
+print('치킨 당첨자 : ',end='') # ,end=''를 통해 한줄로 붙여쓰기 (\n과 같음) 
+print(c[0]) # c의 0번째 인덱스 값 인덱싱
+print('커피 당첨자 : ',end='')
+print(sample(a,3)) # a 자료형에서 3개 랜덤으로 뽑고 리스트로 변환
+print('----축하합니다----')
+```
+### 결과 값
+![image](https://user-images.githubusercontent.com/104752580/224912850-67df02f7-769d-43da-ad56-e13e776aab22.png)
+
+
